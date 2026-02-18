@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(182, 182, 182);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(119, 66, 0);
+}
+body::selection {
+    background: orange;
+    color: white;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+
+/* -----------------HEADER----------------- */
+a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: aquamarine;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+nav{
+    perspective: 500px;
+}
+nav > a{
+    background-color: rgb(170, 255, 227);
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+nav > a:hover{
+    transform: rotateX(35deg);
+    transition: 0.6s ease;
+    box-shadow: 10px black;
+}
+
+#site-header{
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+    padding: 5px 10px 30px;
+    border: 3px ridge #888888;
+    border-radius: 10px;
+    margin: 5px 10%;
+}
+
+
+
+/* -----------------MAIN-CONTENT----------------- */
+#main-content{
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+    padding: 5px 10px 30px;
+    border: 3px ridge #888888;
+    border-radius: 10px;
+    margin: 5px 10%;
+}
+form input{
+    display: block;
+    margin: 5px auto;
+    padding: 5px 10px;
+    background-color: rgb(194, 255, 235);
+}
+form input[placeholder]{
+    text-align: center;
+    color: rgb(119, 66, 0);
+    border: 1px solid rgb(119, 66, 0);
+    border-radius: 5px;
+}
+form input[type="password"]{
+    color: rgb(255, 0, 0);
+    background-color: rgb(119, 66, 0, 0.2);
+}
+button[type="submit"]{
+    color: rgb(119, 66, 0);
+    cursor: pointer;
+    background-color: aquamarine;
+    transition: 0.4s ease;
+    border: 1px solid rgb(119, 66, 0);
+    border-radius: 10%;
+    padding: 5px 20px;
+}
+button[type="submit"]:hover{
+    transform: rotateX(30deg);
+    transition: 0.4s ease;
+    box-shadow: 2px 2px rgb(119, 66, 0) ;
+    border-radius: 20%;
+    border: 1px solid rgb(119, 66, 0);
+}
+.card{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(119, 66, 0);
+    margin: 10px auto;
+    padding: 10px 40px;
+    transition: 0.4s ease;
+    border-radius: 10px;
+}
+.card a[target="_blank"]{
+    transition: 0.4s ease;
+    
+}
+.card[data-type="featured"]{
+    background-color: #bbb;
+}
+.card[data-type="featured"]:hover{
+    background-color: #666;
+    color: orange;
+    box-shadow: 0 0 5px orange inset;
+}
+.card:hover{
+    box-shadow: 0 0 5px rgb(119, 66, 0) inset;
+    transition: 0.4s ease;
+    border-radius: 20px;
+}
+.card a{
+    color: rgba(0, 0, 0, 0.4); 
+}
+.card a:hover{
+    color: rgba(0, 0, 0); 
+}
+
+
+
+/* -----------------FOOTER----------------- */
+footer{
+    background-color: rgb(211, 211, 211);
+    padding: 5px 10px;
+    border: 3px ridge #888888;
+    border-radius: 10px;
+    margin: 5px 10%;
+    text-align: right;
+}
