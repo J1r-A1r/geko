@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(182, 182, 182);
     font-family: Arial, Helvetica, sans-serif;
@@ -98,17 +101,23 @@ button[type="submit"]:hover{
     border: 1px solid rgb(119, 66, 0);
 }
 .card{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 1px solid rgb(119, 66, 0);
     margin: 10px auto;
-    padding: 10px 40px;
+    padding: 10px 10px;
     transition: 0.4s ease;
     border-radius: 10px;
+    position: relative;
 }
-.card a[target="_blank"]{
+.card a{
+    padding: 10px;
     transition: 0.4s ease;
-    
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+
 }
 .card[data-type="featured"]{
     background-color: #bbb;
