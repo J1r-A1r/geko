@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+.contain{
+    height: 300px;
+    width: 400px;
+    background-color:#556D7F;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+}
+.sq{
+    position: absolute;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+}
+.qar1{
+    width: 200px;
+    height: 230px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color:#D99795
+}
+.qar2{
+    height:170px;
+    width:140px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color:#556D7F;  
+} 
+.qar3{
+    width: 100px;
+    height: 30PX;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color: #D99795;
+}
+
+.qar4{
+    width: 120px;
+    height: 30px;
+    left: 50%;
+    top: 30%;
+    translate: -50%;
+    background-color: #D99795;
+}
+.qar5{
+    width: 120px;
+    height: 30px;
+    left: 50%;
+    bottom: 30%;
+    translate: -50%;
+    background-color: #D99795;
+}

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+.main-title{
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+.section-title{
+    font-size: 24px;
+    font-family: Georgia, serif;
+    word-spacing: 2px;
+}
+.text-one{
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+    word-spacing:1.8em;
+    text-align: justify;
+}
+
+.text-two{
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+    word-spacing: 6px;
+}
+
+.text-three{
+    font-size: 20px;
+    word-spacing: 3px;
+    text-align: end;
+    text-transform: capitalize;
+}
+.main-link{
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    text-decoration: double underline;
+    color:rgb(0, 207, 138, 0.6);
+}
+.box{
+    width: 100%;
+    height: 150px;
+}
+.box-one{
+    background-color: orange;
+}
+.box-two{
+    background-image: url("https://ichef.bbci.co.uk/ace/standard/2048/cpsprodpb/aac7/live/66fb3490-ca0d-11f0-86af-23a21b51892f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-three{
+    padding: 40px; 
+    border: 5px solid black;
+    background-image: url("https://afisha.sevastopol.su/wp-content/uploads/2020/06/ecf4cf42984f6a01289206ef6d915adc.jpg");
+    background-repeat: repeat;      
+    background-attachment: fixed;   
+    background-clip: content-box;   
+}
