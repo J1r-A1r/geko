@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.contain{
+    height: 300px;
+    width: 400px;
+    background-color: #fff;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    border-width: 100px 0 100px 120px;
+    border-style: solid;
+    border-color: green transparent red black;
+}
+
+

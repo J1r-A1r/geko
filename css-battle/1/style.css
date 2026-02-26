@@ -4,41 +4,13 @@
 .contain{
     height: 300px;
     width: 400px;
-    background-color: #FADE8B;
+    background-color: #5d3a3a;
     position: relative;
     left: 50%;
     translate: -50%;
 }
-.square{
-    width: 100px;
+.qar{
+    width: 200px;
     aspect-ratio: 1/1;
-    border: 10px solid #000;
-}
-.qar2{
-    position: absolute;
-    left: 50%;
-    top: 20px;
-    translate: -50%;
-    background-color: #DE9473;
-}
-.qar4{
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    translate: -50%;
-    background-color: #DE9473;
-}
-.qar1{
-    position: absolute;
-    left: 70px;
-    top: 50%;
-    translate: 0 -50%;
-    border: 10px solid #000;
-}
-
-.qar3{
-    position: absolute;
-    right: 70px;
-    top: 50%;
-    translate: 0 -50%;
+    background-color: #b5e0ba;
 }
