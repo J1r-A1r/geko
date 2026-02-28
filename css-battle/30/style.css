@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    height: 300px;
+    width: 400px;
+    background-color: #62306D;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+}
+.a1{
+    background-color: #F4DA64;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    translate: 0 -50% ;
+
+}
+.a2{
+    background-color: #E25C57;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    translate: 0 -50% ;
+}
+.klor{
+    width: 180px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.kisaklor{
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    translate: 0 -50%;
+    background-image: linear-gradient(transparent 50%, #F4DA64 50%);
+}

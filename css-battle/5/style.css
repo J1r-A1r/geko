@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    height: 300px;
+    width: 400px;
+    background-color: #6592CF;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+}
+.qar{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color: #243D83;
+}

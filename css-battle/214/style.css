@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    height: 300px;
+    width: 400px;
+    background-color: #F8F8F8;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    margin-top: 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.qar1{
+    width: 100%;
+    background-color: #F8F8F8;
+    display:flex;
+    gap:20px;
+    border: 1px solid #000;
+}
+.kubik{
+    width: 40px;
+    height: 50px;
+    background-color: #787885;
+}
+
+.qar2{
+    width: 100%;
+    background-color: #F8F8F8;
+    display:flex;
+    gap:20px;
+    border: 1px solid #000;
+    flex-direction: column;
+}
+.gic{
+    width: 100%;
+    height: 10px;
+    
+    background-color: #787885;
+}
