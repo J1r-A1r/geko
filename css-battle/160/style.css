@@ -10,31 +10,16 @@
     position: relative;
     left: 50%;
     translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.a1{
-    background-color: #F4DA64;
-    position: absolute;
-    left: 60px;
-    top: 50%;
-    translate: 0 -50% ;
-
-}
-.a2{
-    background-color: #E25C57;
-    position: absolute;
-    right: 60px;
-    top: 50%;
-    translate: 0 -50% ;
-}
-.klor{
-    width: 180px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-}
-.kisaklor{
-    position: absolute;
-    left: 60px;
-    top: 50%;
-    translate: 0 -50%;
-    background-image: linear-gradient(transparent 50%, #F4DA64 50%);
-}
+.div1 {
+    width: 200px;
+    aspect-ratio:1/1;
+    background-color:#62306D;
+    border-radius:50%;
+    border:40px solid  #F7EC7D;
+    border-top-color:#E38F66;
+    rotate:-45deg;
+  }
