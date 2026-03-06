@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+.contain{
+    height: 300px;
+    width: 400px;
+    background-color: #1A4341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+.obshi{
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+.klor-top{
+  border-radius: 50px;
+}
+.kisaklor-top{
+  border-radius: 50px 50px 0 0;
+}
+.klor-top{
+  border-radius: 50px;
+}
+.klor-bottom{
+  border-radius: 50px;
+}
+.kisaklor-bottom{
+  border-radius: 0 0 50px 50px ;
+}
+.k1{
+  background-color: #998235;
+}
+.k2{
+  background-color: #F3AC3C;
+}
