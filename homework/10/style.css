@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  padding: 50px;
+  font-family: sans-serif;
+}
+
+/* ===== ГЛАВНЫЙ GRID ===== */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 260px;   /* все карточки одинаковой высоты */
+  gap: 40px;
+}
+
+/* ===== КАРТОЧКА ===== */
+
+.card {
+  background: #334155;
+  padding: 18px;
+  display: grid;
+  gap: 16px;
+  height: 100%;
+  align-content: stretch;
+}
+
+.card > div {
+  background: #2dd4bf;
+}
+
+/* Цвета */
+
+.red { background: #f87171 !important; }
+.orange { background: #fb923c !important; }
+.darkorange { background: #ff8018 !important;}
+.darkgreen { background: #24c577 !important;}
+.green { background: #43de93 !important;}
+
+
+/* ===== ВНУТРЕННИЕ GRID ===== */
+
+.g1 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.g2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);;
+}
+.g2 .big {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.g2 .wide {
+  grid-column: span 3;
+}
+
+.g3 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.g3 .full {
+  grid-column: 1 / -1;
+}
+.g3 .wide {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.g3 .wide1 {
+  grid-row: span 2;
+}
+
+.g4 {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2fr 3fr 1fr;
+}
+.g4 .full {
+  grid-column: 1 / -1;
+}
+.g4 .medium {
+  grid-column: span 2;
+}
+.g4 .medium1 {
+  grid-column: span 4;
+}
+.g4 .wide{
+  grid-column: span 3;
+}
+
+.g5 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.g6 { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+
+"red red darkgreen orangeTop"
+"lightorange green mint ."
+"bigorange bigorange mint2 red2"
+"bigorange bigorange darkgreen2 ."
+"static static static orangeBottom";
+
+}
+.red1{grid-area:red;background:#f87171;}
+
+.darkgreen1{grid-area:darkgreen;background:#0f9f7a;}
+
+.orangeTop{grid-area:orangeTop;background:#fb923c;}
+
+.lightorange{grid-area:lightorange;background:#ff8a4c;}
+
+.green1{grid-area:green;background:#10b981;}
+
+.mint{grid-area:mint;background:#2dd4bf;}
+
+.bigorange{grid-area:bigorange;background:#fb923c;}
+
+.mint2{grid-area:mint2;background:#34d399;}
+
+.red2{grid-area:red2;background:#f87171;}
+
+.darkgreen2{grid-area:darkgreen2;background:#059669;}
+
+.static1{grid-area:static;background:#2dd4bf;}
+
+.orangeBottom{grid-area:orangeBottom;background:#fb923c;}
+
+
+.g7{
+display:grid;
+
+grid-template-columns: 4fr 4fr;
+grid-template-rows: 1fr 4fr;
+
+gap:10px;
+}
+
+
+.topLeft{
+background:#fb923c;
+}
+
+.topRight{
+background:#2dd4bf;
+}
+
+.bigRed{
+background:#f87171;
+}
+
+.rightGrid{
+display:grid;
+
+grid-template-columns:2fr 2fr;
+grid-template-rows:4fr 4fr;
+
+gap:10px;
+
+background:#2dd4bf;
+padding:10px;
+}
+
+.rightTop{
+grid-column:1/3;
+background:#2dd4bf;
+}
+
+.rightBottomLeft{
+background:#10b981;
+}
+
+.rightBottomRight{
+background:#fb923c;
+}
+.g8 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.g8 .full {
+  grid-column: 1 / -1;
+}
+.g8 .medium8{
+  grid-column: 3 / -1;
+}
+
+.g9 {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.g9 .full {
+  grid-column: 1 / -1;
+  grid-row: 1 / 3;
+}
+.big9{
+    grid-area:3/1/-1/3;
+}
+.medium9{
+    grid-area: 3 / 3 / 5/ -1;
+}
+.bottom9{
+    grid-column: span 2;
+    grid-row: span 2;
+}
