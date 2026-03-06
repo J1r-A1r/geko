@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif ;
+    background-color: #000;
+}
+.container {
+    height: 600px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+
+.container > div {
+    font-size: 24px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.gorciq {
+    background: #ff9f05;
+    color: #fff;
+}
+.tiv{
+  background: #333;
+  color: #fff;
+}
+.AC,.plusminus,.tokos{
+  background-color: #a5a5a5;
+  color: #000;
+}
+.title{
+  grid-column: 4/-1;
+  background-color: transparent;
+  color:#fff;
+  position: relative;
+  right: -20px;
+}
+.zero{
+  grid-column: span 2;
+}
+.sp{
+  font-size: 50px;
+  
+}
+.sp2{
+  position: relative;
+  left: -50px;
+}
