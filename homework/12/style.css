@@ -1,0 +1,188 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#222;
+}
+
+/* корпус светофора */
+
+.traffic-light{
+  width:120px;
+  padding:20px;
+  background:#111;
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+/* лампы */
+
+.light{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background:#333;
+  margin:auto;
+}
+
+/* цвета */
+
+.red{ background:#4b0000; }
+.yellow{ background:#4b4b00; }
+.green{ background:#003b00; }
+
+/* анимации */
+
+.red{
+  animation:redLight 18s infinite;
+}
+
+.yellow{
+  animation:yellowLight 18s infinite;
+}
+
+.green{
+  animation:greenLight 18s infinite;
+}
+
+/* karmir */
+
+@keyframes redLight{
+0%{
+background:red;
+box-shadow:0 0 25px red;
+}
+10%{
+background:red;
+box-shadow:0 0 25px red;
+}
+
+40%{
+background:red;
+box-shadow:0 0 25px red;
+}
+
+50%{
+background:#4b0000;
+box-shadow:none;
+}
+90%{
+background:#4b0000;
+box-shadow:none;
+}
+100%{
+background:red;
+box-shadow:0 0 25px red;
+}
+
+
+}
+
+/* dexin */
+
+@keyframes yellowLight{
+
+0%{
+background:#4b4b00;
+box-shadow:none;
+}
+30%{
+  background:#4b4b00;
+  box-shadow:none;
+}
+35%{
+  background:yellow;
+  box-shadow:0 0 25px yellow;
+}
+40%{
+  background:#4b4b00;
+  box-shadow:none;
+}
+45%{
+  background:yellow;
+  box-shadow:0 0 25px yellow;
+}
+50%{
+  background:#4b4b00;
+  box-shadow:none;
+}
+
+80%{
+background:#4b4b00;
+  box-shadow:none;
+}
+90%{
+background:yellow;
+box-shadow:0 0 25px yellow;
+}
+
+100%{
+background:#4b4b00;
+box-shadow:none;
+}
+
+}
+
+/* kanach*/
+
+@keyframes greenLight{
+
+0%{
+background:#003b00;
+box-shadow:none;
+}
+
+45%{
+background:#003b00;
+box-shadow:none;
+}
+50%{
+background:lime;
+box-shadow:0 0 25px lime;
+}
+70%{
+background:lime;
+box-shadow:0 0 25px lime;
+}
+/* tartoc */
+
+75%{
+background:#003b00;
+box-shadow:none;
+}
+
+80%{
+background:lime;
+box-shadow:0 0 25px lime;
+}
+
+85%{
+background:#003b00;
+box-shadow:none;
+}
+
+90%{
+background:lime;
+box-shadow:0 0 25px lime;
+}
+
+95%{
+background:#003b00;
+box-shadow:none;
+}
+
+100%{
+background:#003b00;
+box-shadow:none;
+}
+
+}
