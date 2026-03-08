@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 20px;
+}
+.contain {
+    height: 300px;
+    width: 400px;
+    background: #FDFFE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.klor-karmir {
+    width: 150px;
+    aspect-ratio: 1/1;
+    background: #D95362;
+    border-radius: 50%;
+}
+.klor-kapuyt {
+    width: 150px;
+    aspect-ratio: 1/1;
+    background: #2D3464;
+    border-radius: 50%;
+}
+
+.qarakusi{
+    width: 150px;
+    aspect-ratio: 1/1;
+    background: #D95362;
+    
+}
+
+
+.sp-qarakusi {
+    position: fixed;
+    height: 300px;
+    aspect-ratio: 1/1;
+    border: 20px solid #FDFFE9;
+}

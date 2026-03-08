@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #333;
+}
+.contain{
+    height: 300px;
+    width: 400px;
+    background-color: #FDFFE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+  padding: 20px;
+  width:100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows:1fr 40px 2fr 2fr 1fr ;
+  grid-template-areas: 
+  "k1 k1"
+  "k2 k3"
+  "k2 k4"
+  "k2 k5"
+  "k6 k6"; 
+  gap:10px;
+}
+.obshi{
+  background-color: #ADB274;
+}
+.k1{
+  grid-area: k1;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.k2{
+  grid-area: k2;
+}
+.k3{
+  grid-area: k3;
+}
+.k4{
+  grid-area: k4;
+}
+.k5{
+  grid-area: k5;
+}
+.k6{
+  grid-area: k6;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+}
+.qarakusi{
+  width: 20px;
+  aspect-ratio: 1/1;
+  background-color: #555A2A;
+}

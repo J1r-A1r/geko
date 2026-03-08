@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+.contain{
+    height: 300px;
+    width: 400px;
+    background-color: #071945;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px 20px;
+}
+.obshi{
+  width: 70px;
+  height: 20px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+.k1 > .gic{
+  background-color: #B069F7;
+  grid-area: 1/2/2/3;
+}
+.k1 > .ket1{
+  background-color: #B069F7;
+  grid-area: 2/1/2/2;
+}
+.k1 > .ket2{
+  background-color: #B069F7;
+  grid-area: 2/3/3/4;
+}
+
+
+.k2 > .gic{
+  background-color: #F8DA37;
+  grid-area: 1/2/2/3;
+}
+.k2 > .ket1{
+  background-color: #F8DA37;
+  grid-area: 2/1/2/2;
+}
+.k2 > .ket2{
+  background-color: #F8DA37;
+  grid-area: 2/3/3/4;
+}
+
+.start{
+  grid-column-start: span 2;
+}
+
+
+
+
+
+
+.ket{
+  width: 10px;
+  aspect-ratio: 1/1;
+}
+.erkarket{
+  width: 10px;
+  height: 15px;
+}
+.footer .ket, .erankyuni{
+  background-color: #2CE1EA;
+  grid-column-start:2;
+}
+.erankyuni{
+  background-color: transparent;
+  width:0;
+  height:0;
+  border-left:20px solid transparent;
+  border-right:20px solid transparent;
+  border-bottom:20px solid #2CE1EA;
+  position:absolute;
+  bottom: 0;
+  left: -15px;
+}
+.footer{
+  height: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  position:relative;
+}
