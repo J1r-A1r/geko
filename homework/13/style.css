@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#222;
+}
+
+.board{
+display:grid;
+grid-template-columns:repeat(8,1fr);
+grid-template-rows:repeat(8,1fr);
+
+height:90vmin;
+width:90vmin;
+}
+
+.cell{
+display:flex;
+justify-content:center;
+align-items:center;
+padding: 0;
+font-size:11vmin;
+overflow:hidden;
+}
+
+.light{
+background:#eee;
+padding: 0;
+}
+
+.dark{
+background:#666;
+}
+
+.cell:not(:empty){
+cursor:grab;
+}
+
+.cell:not(:empty):active{
+cursor:grabbing;
+}
