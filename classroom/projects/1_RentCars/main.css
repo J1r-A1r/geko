@@ -1,0 +1,59 @@
+:root{
+    /* Colors */
+    --color-primary: #1572D3;
+    --color-primary-bg: #1572D31a;
+    --color-black: #000;
+    --color-neutral-1: #222;
+    --color-neutral-2: #444;
+    --color-neutral-3: #666;
+    --color-neutral-4: #888;
+    --color-neutral-5: #aaa;
+    --color-neutral-6: #ccc;
+    --color-neutral-7: #eee;
+    --color-white: #fff;
+
+    /* Font Sizes */
+    --font-size-1:12px;
+    --font-size-2:14px;
+    --font-size-3:16px;
+    --font-size-4:18px;
+    --font-size-5:20px;
+    --font-size-6:24px;
+    --font-size-7:38px;
+    --font-size-8:48px;
+    --font-size-9:64px;
+
+    /* Font Families */
+    --font-family-main: "Poppins", sans-serif;
+
+    /* Radius */
+    --radius-1: 8px;
+    --radius-2: 12px;
+    --radius-3: 16px;
+    --radius-4: 24px;
+    --radius-i: calc(infinity * 1px);   
+
+
+    /* transitions */
+    --transition: 0.3s;
+}
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+
+}
+body{
+    font-family: var(--font-family-main);
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+ul, ol{
+    list-style: none;
+}

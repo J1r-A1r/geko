@@ -22,11 +22,10 @@ display:flex;
 justify-content:center;
 align-items:center;
 
-font-size:7vmin;
-line-height:1;
+font-size:11vmin;
+overflow: hidden;
 }
-
-
+  
 .cell:nth-child(odd):nth-child(-n+8),
 .cell:nth-child(even):nth-child(n+9):nth-child(-n+16),
 .cell:nth-child(odd):nth-child(n+17):nth-child(-n+24),
