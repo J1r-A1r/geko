@@ -23,7 +23,7 @@ function login(users, username, password) {
   } else if (foundUser.isBlocked) {
     console.log("Օգտատերը արգելափակված է");
   } else {
-    console.log(`Բարի գալուստ, ${foundUser.username}`);
+    console.log(`Բարի գալուստ, ${foundUser.username}`);          
   }
 }
 
