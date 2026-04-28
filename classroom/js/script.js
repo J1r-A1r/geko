@@ -1,37 +1,21 @@
-console.log("--- Ari chingaching xaxanq :)  (Rock, Paper, Scissors) ---");
-console.log("Управление:");
-console.log("[R] — Rock (qar)");
-console.log("[P] — Paper (tuxt)");
-console.log("[S] — Scissors (mkrat)");
-console.log("-------------------------------------------");
-
-      
-const gameData = {
-    r: { name: 'qar', beats: 's' },
-    p: { name: 'tuxt', beats: 'r' },
-    s: { name: 'mkrat', beats: 'p' }
-};
-
-function play(userChoice) {
-    const userKey = userChoice.toLowerCase();
-  
-    if (!gameData[userKey]) {
-        console.error("Zguyshhh!!!!!!!!  Verevum nshvac e te inch knopka e petq sexmel!!!!");
-        return;
+class Shenq{
+    constructor(MutqeriQanak){
+        this.mutqer = MutqeriQanak
     }
-
-    const keys = Object.keys(gameData);
-    const computerKey = keys[Math.floor(Math.random() * keys.length)];
-
-    console.log(`qo yntracy: ${gameData[userKey].name}`);
-    console.log(`im yntracy: ${gameData[computerKey].name}`);
-
-    const result = userKey === computerKey 
-        ? "nishyaya! 🤝" 
-        : (gameData[userKey].beats === computerKey ? "du krecir! 🎉" : "es kreci! 🤖");
-
-    console.log(`yly nayii : ${result}`);
-    console.log("-------------------------------------------");
 }
-
-
+class ShenqiHarker extends Shenq{
+    constructor(MutqeriQanak, ShenqiHarker, ShenqiBnakaranneriQanakHarkum){
+    super(MutqeriQanak)
+    this.hark = ShenqiHarker
+    this.bnakaran = ShenqiBnakaranneriQanakHarkum
+    }
+}
+class Senyak extends ShenqiHarker{
+    constructor(MutqeriQanak, ShenqiHarker, ShenqiBnakaranneriQanakHarkum, BnakaraniHamar, Senyak, ArastaghiBardzrutyun){
+    super(MutqeriQanak, ShenqiHarker)
+        this.bnakaraniqanak = ShenqiBnakaranneriQanakHarkum
+        this.BnakaraniHamar = BnakaraniHamar
+        this.Senyak = Senyak
+        this.ArastaghiBardzrutyun = ArastaghiBardzrutyun
+    }
+}
