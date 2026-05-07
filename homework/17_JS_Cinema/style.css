@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.cinema-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.showcase {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase li small {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    max-width: 450px;
+    margin: 15px 0 30px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 5px;
+    border-radius: 5px;
+}
+
+.seats-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+
+.seat {
+    background-color: #444451;
+    height: 35px;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.seat.selected {
+    background-color: #6feaf6; 
+}
+
+.seat.occupied {
+    background-color: #fff; 
+    cursor: not-allowed;
+}
+
+
+.seat:not(.occupied):hover {
+    transform: scale(1.2);
+}
+
+.showcase .seat:hover {
+    transform: none;
+    cursor: default;
+}
+
+.text {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.text span {
+    color: #6feaf6;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #6feaf6;
+    color: #242333;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #4bbbc6;
+    transform: scale(1.05);
+}

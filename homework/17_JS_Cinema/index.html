@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Կինոթատրոնի Ամրագրում</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cinema-container">
+        <h1>Կինոթատրոն - Տեղերի Ամրագրում</h1>
+
+        <ul class="showcase">
+            <li>
+                <div class="seat"></div>
+                <small>Ազատ</small>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <small>Ընտրված</small>
+            </li>
+            <li>
+                <div class="seat occupied"></div>
+                <small>Զբաղված</small>
+            </li>
+        </ul>
+
+        <div class="screen">ԷԿՐԱՆ</div>
+
+        <div class="seats-container" id="seats-container"></div>
+
+        <p class="text">
+            Դուք ընտրել եք <span id="count">0</span> տեղ, ընդհանուր գումարը՝ <span id="total">0</span> ֏:
+        </p>
+
+        <button id="book-btn">Ամրագրել</button>
+    </div>
+
+    <script>
+        const seatsContainer = document.getElementById('seats-container');
+        const countDisplay = document.getElementById('count');
+        const totalDisplay = document.getElementById('total');
+        const bookBtn = document.getElementById('book-btn');
+        const rows = 6;
+        const cols = 8;
+        const ticketPrice = 1500; 
+
+        function createSeats() {
+            for (let i = 0; i < rows * cols; i++) {
+                const seat = document.createElement('div');
+                seat.classList.add('seat');
+                
+                if (Math.random() < 0.2) {
+                    seat.classList.add('occupied');
+                }
+                
+                seatsContainer.appendChild(seat);
+            }
+        }
+
+        function updateSelectedCountAndTotal() {
+            const selectedSeats = document.querySelectorAll('.seats-container .seat.selected');
+            const selectedSeatsCount = selectedSeats.length;
+
+            countDisplay.innerText = selectedSeatsCount;
+            totalDisplay.innerText = selectedSeatsCount * ticketPrice;
+        }
+
+        seatsContainer.addEventListener('click', (e) => {
+            if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
+                e.target.classList.toggle('selected');
+                updateSelectedCountAndTotal();
+            }
+        });
+
+        bookBtn.addEventListener('click', () => {
+            const selectedSeats = document.querySelectorAll('.seats-container .seat.selected');
+
+            if (selectedSeats.length === 0) {
+                alert('Խնդրում ենք ընտրել առնվազն մեկ ազատ տեղ:');
+                return;
+            }
+
+            selectedSeats.forEach(seat => {
+                seat.classList.remove('selected');
+                seat.classList.add('occupied');
+            });
+
+            updateSelectedCountAndTotal();
+            alert('Ձեր տեղերը բարեհաջող ամրագրվեցին:');
+        });
+
+        createSeats();
+    </script>
+</body>
+</html>
