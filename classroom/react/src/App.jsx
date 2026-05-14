@@ -7,7 +7,7 @@ const App = () => {
     <>
     <Button variant="outline"/>
     <Button variant="empty"/>
-    <Button variant="fill"/>
+  <Button variant="fill"/>
     </>
   )
 }
