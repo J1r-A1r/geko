@@ -1,0 +1,74 @@
+.news-section {
+  padding: 60px 0;
+}
+
+.news-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: -0.5px;
+}
+
+/* Сетка, которая автоматически подстраивает количество колонок под размер экрана */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.news-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Прижимает дату к верху, а ссылку к низу */
+  min-height: 220px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.news-card:hover {
+  background: var(--surface-accent);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.news-date {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary); /* Розовый/неоновый акцент */
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.news-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 20px;
+  /* Если заголовок будет слишком длинным, он аккуратно скроется с троеточием */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+/* Эффект для ссылки при ховере на всю карточку */
+.news-card:hover .read-more {
+  color: #fff;
+  transform: translateX(6px); /* Стрелочка слегка уезжает вправо */
+}

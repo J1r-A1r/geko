@@ -1,0 +1,42 @@
+:root {
+  --background: #0D0D0F;
+  --surface: #141416;
+  --surface-hover: #1A1A1E;
+  --foreground: #FFFFFF;
+  --muted: #717182;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  --live-color: #FF3B30;
+  --radius: 6px; /* Более строгие, собранные углы */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Строгий Live-индикатор */
+.badge-live {
+  background: var(--live-color);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
